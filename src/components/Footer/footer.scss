@@ -1,0 +1,41 @@
+$fontContent: "Baloo 2", cursive;
+$fontTitles: "Syncopate", sans-serif;
+$color1: #2f5d62;
+$color2: #962d2d;
+$white: #f8f1f1;
+$black: #161616;
+.footer {
+  font-family: $fontContent;
+  font-weight: 500;
+  min-width: 100vw;
+  min-height: 100%;
+  padding: 0.5rem 1rem;
+  background-color: $black;
+  .wrapperCopy {
+    width: 100%;
+    .copy {
+      text-align: center;
+      font-size: 1rem;
+      color: $white;
+    }
+  }
+  .Whatsapp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0 0 0;
+    text-decoration: none;
+    .wrapperIcon {
+      width: 1.2rem;
+      .whats {
+        width: 100%;
+      }
+    }
+    .text {
+      color: $white;
+      margin-left: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}

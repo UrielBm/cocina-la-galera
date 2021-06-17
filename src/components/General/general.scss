@@ -1,0 +1,18 @@
+$fontTitles: "Syncopate", sans-serif;
+$color1: #2f5d62;
+$color2: #962d2d;
+$white: #f8f1f1;
+$black: #161616;
+.title {
+  font-family: $fontTitles;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  color: $white;
+}
+.subtitle {
+  font-family: $fontTitles;
+  font-size: 2rem;
+  font-weight: 500;
+  color: $color2;
+}

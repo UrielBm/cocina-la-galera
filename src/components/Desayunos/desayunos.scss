@@ -1,0 +1,70 @@
+$color1: #2f5d62;
+$color2: #962d2d;
+$white: #f8f1f1;
+$black: #161616;
+.wrapperSubtitleDesayunos {
+  padding: 1rem 0;
+  text-align: center;
+}
+.wrapperDesayunos {
+  padding: 1rem 2rem;
+  .wrapperDesayuno {
+    border-radius: 0.85rem;
+    padding: 1rem;
+    border: 1px solid $color1;
+    margin-bottom: 1rem;
+    .wrapperImgDesayuno {
+      width: 14rem;
+      height: 14rem;
+      border-radius: 50%;
+      margin: 0 auto 1rem auto;
+      -webkit-box-shadow: 0px 8px 9px -2px rgba($color2, 0.54);
+      box-shadow: 0px 8px 9px -2px rgba($color2, 0.54);
+      .desayunoImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .wrapperFundaData {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+      .nameDesayuno {
+        font-weight: 500;
+        color: $black;
+        font-size: 1rem;
+      }
+      .precioDesayuno {
+        font-weight: 700;
+        color: $color2;
+        font-size: 1.3rem;
+      }
+    }
+    .wrapperDescriptionDesayuno {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      text-align: start;
+      p {
+        font-size: 0.85rem;
+        line-height: 1rem;
+        color: #494949;
+      }
+    }
+    @media only screen and (min-width: 720px) {
+      width: 25rem;
+      margin-bottom: 0;
+      margin-right: 1rem;
+    }
+  }
+  @media only screen and (min-width: 720px) {
+    max-width: 60rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}

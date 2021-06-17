@@ -1,0 +1,58 @@
+$color1: #2f5d62;
+$color2: #962d2d;
+$white: #f8f1f1;
+$black: #161616;
+.wrapperhero {
+  min-width: 100vw;
+  min-height: 90vh;
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 90vh;
+    background-image: linear-gradient(rgba($color1, 0.5), rgba($color2, 0.5));
+    .wrapperLogo {
+      width: 8rem;
+      .logo {
+        width: 100%;
+      }
+    }
+    .wrapperTitle {
+      width: 100%;
+      margin: 1rem 0;
+      padding: 0.5rem 0;
+      backdrop-filter: blur(0.1rem);
+      -webkit-backdrop-filter: blur(0.1rem);
+    }
+    .wrapperNav {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+      .NavItem {
+        width: 320px;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        background-color: $color1;
+        color: $white;
+        border-radius: 2rem;
+        text-decoration: none;
+        font-size: 1.2rem;
+        outline: none;
+        transition: width 0.4s ease-in-out, background-color 0.4s ease-in-out,
+          font-size 0.4s ease-in-out;
+        &:not(:last-of-type) {
+          margin-bottom: 1rem;
+        }
+        &:hover {
+          width: 330px;
+          background-color: $black;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}

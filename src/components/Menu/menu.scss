@@ -1,0 +1,87 @@
+$color1: #2f5d62;
+$color2: #962d2d;
+$white: #f8f1f1;
+$black: #161616;
+.wrapperSubTitle {
+  text-align: center;
+  padding: 1rem 0;
+}
+.wrapperMenu {
+  padding: 1rem 3rem;
+  .wrapperSopas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .wrapperPlatillos {
+    width: 100%;
+    .titlePlatillos {
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $color1;
+      margin-bottom: 0.8rem;
+    }
+    .wrapperDate {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 0.8rem;
+      color: $color2;
+      font-weight: 500;
+    }
+    .platillo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:not(:last-of-type) {
+        margin-bottom: 0.5rem;
+      }
+      .platilloNombre {
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+      .platilloPrecio {
+        font-weight: 700;
+        color: $color2;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .wrapperPreparar {
+    width: 100%;
+    .platilloPreparar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:not(:last-of-type) {
+        margin-bottom: 0.8rem;
+      }
+    }
+    .platilloNombre {
+      font-size: 1rem;
+    }
+    .wrapperType {
+      font-size: 0.8rem;
+      color: $color1;
+    }
+    .wrapperTypeGuarni {
+      font-size: 0.8rem;
+      color: $black;
+    }
+    .precio {
+      font-weight: 700;
+      color: $color2;
+      font-size: 1.2rem;
+    }
+  }
+  @media only screen and (min-width: 720px) {
+    width: 30rem;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
