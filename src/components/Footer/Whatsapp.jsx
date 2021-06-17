@@ -12,10 +12,10 @@ const Whatsapp = ({ mensaje }) => {
       }
     }
   `)
-  const { number } = data.whats[0]
+  const { numero } = data.whats[0]
   return (
     <a
-      href={`https://api.whatsapp.com/send?phone=52${number}&text=${mensaje}`}
+      href={`https://api.whatsapp.com/send?phone=52${numero}&text=${mensaje}`}
       target="_black"
       rel="noreferrer"
       className="Whatsapp"

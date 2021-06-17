@@ -75,9 +75,47 @@ $black: #161616;
       font-size: 1.2rem;
     }
   }
+  .wrapperImport {
+    width: 100%;
+    .titleImport {
+      text-align: start;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $color1;
+      margin-bottom: 0.8rem;
+    }
+    .wrapperInfoImport {
+      width: 100%;
+      .wrapperData {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.8rem;
+        .importName {
+          font-size: 1rem;
+        }
+        .importPrecio {
+          font-weight: 700;
+          color: $color2;
+          font-size: 1.2rem;
+        }
+      }
+      .wrapperInfoComida {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        p {
+          text-align: center;
+          color: rgb(110, 110, 110);
+          font-weight: 0.85rem;
+        }
+      }
+    }
+  }
   @media only screen and (min-width: 720px) {
     width: 30rem;
-    height: 80vh;
+    min-height: 80vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;

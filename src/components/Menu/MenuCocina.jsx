@@ -4,6 +4,7 @@ import PrimerTiempo from "./PrimerTiempo"
 import SegundoTiempo from "./SegundoTiempo"
 import Platillos from "./Platillos"
 import Postres from "./Postres"
+import Importante from "./Importante"
 import "./menu.scss"
 const MenuCocina = () => {
   return (
@@ -15,6 +16,7 @@ const MenuCocina = () => {
           <SegundoTiempo />
           <Platillos />
           <Postres />
+          <Importante />
         </div>
       </div>
     </>
