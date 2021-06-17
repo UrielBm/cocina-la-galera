@@ -16,6 +16,10 @@ const Layout = ({ children }) => {
     <>
       <Helmet>
         <html lang="es" />
+        <meta
+          name="description"
+          content="pagina web del menu de cocina la galera , restaurante en Pachuca Hidalgo."
+        />
         <title>Cocina la Galera</title>
       </Helmet>
       <main className="wrapperMain">{children}</main>
