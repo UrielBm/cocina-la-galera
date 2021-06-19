@@ -6,6 +6,7 @@ const PrimerTiempo = () => {
   return (
     <section className="wrapperSopas">
       <p>{sopa1}</p>
+      <p>O</p>
       <p>{sopa2}</p>
     </section>
   )
