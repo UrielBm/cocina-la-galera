@@ -1,22 +1,11 @@
 import React from "react"
 import useMenu from "../../hooks/useMenu"
-import formatDistanceToNow from "date-fns/formatDistanceToNow"
-import { es } from "date-fns/locale"
 const Platillos = () => {
   const { platillos } = useMenu()
   const { platillo } = platillos
-  const { contentDigest } = platillo[0].internal
   return (
     <section className="wrapperPlatillos">
       <h3 className="titlePlatillos">Platillos</h3>
-      <div className="wrapperDate">
-        <p>
-          {formatDistanceToNow(new Date(contentDigest), {
-            locale: es,
-          })}{" "}
-          atras
-        </p>
-      </div>
       {platillo.map(({ nombre, precio, slug }, index) => (
         <div key={`${slug}-${index}`} className="platillo">
           <p className="platilloNombre">{nombre}</p>
